@@ -7,6 +7,8 @@
     <title>Login</title>
     <link rel="icon" type="image/png" href="/images/favicon.jpg">
     <link rel="stylesheet" href="/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bcryptjs/2.4.3/bcrypt.min.js"></script>
+
 </head>
 
 <body>
@@ -31,24 +33,23 @@
             <div class="black-box"></div>
             <form action="/login" method="post">
                 <div class="form-group">
-                    <input type="text" class="form-control" id="username" name="username" placeholder="User">
+                    <input type="text" class="form-control" id="username" name="username" placeholder="Benutzername">
                 </div>
                 <div class="form-group">
-                    <input type="password" class="form-control" id="password" name="password" placeholder="Password">
+                    <input type="password" class="form-control" id="password" name="password" placeholder="Passwort">
                 </div>
                 <button type="submit" class="btn btn-primary">Login</button>
-                <p id="errorMessage" style="visibility: hidden;">Flascher Benutzername oder Passwort</p>
+                <p id="errorMessage" style="display: none;">Flascher Benutzername oder Passwort</p>
             </form>
         </div>
-        <img src="/images/sitting.png"></img>
+        <img id="login-img" src="/images/sitting.png"></img>
     </div>
 
     <footer>
-        <a href="#">Help</a>
-        <a href="#">Login</a>
+        <a href="/help.html">Help</a>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="login.js"></script>
 </body>
 
 </html>

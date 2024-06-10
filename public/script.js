@@ -36,6 +36,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
     // Function to apply styles based on the selected option
     function applyStyles(option) {
+
+        localStorage.setItem('selectedStyle', option);  // Save the selected option to localStorage
+        
         switch (option) {
             case 'option1':
                 document.body.style.backgroundColor = "#F4FFCA";
@@ -56,6 +59,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
                 });
                 break;
             case 'option2':
+
                 document.body.style.backgroundColor = '#CAEFFF';
                 if (document.getElementById("seconds")) {
                     document.getElementById("seconds").style.color = '#CAEFFF';
@@ -123,6 +127,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         }
     }
 
+
     // Apply the stored option if available
     const savedOption = localStorage.getItem('selectedOption');
     if (savedOption) {
@@ -143,6 +148,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
                 const selectedOption = this.value;
                 applyStyles(selectedOption);
                 localStorage.setItem('selectedOption', selectedOption);
+
+
             }
         });
     });
@@ -157,7 +164,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
     });
     observer.observe(document.body, { childList: true, subtree: true });
 });
-
 
 
 

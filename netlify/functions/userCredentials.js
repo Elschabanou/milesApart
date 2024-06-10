@@ -11,12 +11,13 @@ exports.handler = async (event, context) => {
         const collection = database.collection("users");
 
         // Query the collection to retrieve JSON data
-        const jsonData = await collection.find({}).toArray();
+        const test = await collection.find({}).toArray();
 
         return {
             statusCode: 200,
-            body: JSON.stringify(jsonData)
+            body: JSON.stringify(test)
         };
+
     } catch (error) {
         return {
             statusCode: 500,
