@@ -29,6 +29,9 @@ function displayEventDetails(event) {
     var headerElement = document.querySelector('.header-title');
     headerElement.textContent = event._id;
 
+    var headerDate = document.querySelector('.header-date');
+    headerDate.textContent = event.dateTime.slice(0, event.dateTime.indexOf(','));
+
     var eventDescription = document.getElementById('description');
     eventDescription.textContent = event.description;
 }

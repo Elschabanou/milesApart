@@ -37,6 +37,10 @@ body {
     gap: 25px;
 }
 
+.header-date {
+    font-family: "Irina Serif";
+}
+
 #subtitle {
     font-size: 32px;
 }
@@ -88,6 +92,7 @@ header {
     display: flex;
     justify-content: flex-end;
     padding: 40px 100px 0px 100px;
+    flex-wrap: wrap;
 
 }
 
@@ -141,6 +146,8 @@ header {
     gap: 40px;
     flex-grow: 1;
 }
+
+
 
 .upcoming-Events {
     background-color: var(--background-color);
@@ -227,6 +234,19 @@ h2 {
     form {
         padding: 40px 20px !important;
     }
+
+    #top-cont-login {
+        height: 60vh !important;
+    }
+
+    #login-img {
+        width: 800px;
+        margin: 0;
+    }
+
+    #login-form {
+        top: 40% !important;
+    }
 }
 
 button {
@@ -305,7 +325,6 @@ footer a:hover {
 
 #login-form {
     border-radius: var(--radius);
-    width: 450px;
     position: absolute;
     top: 50%;
     left: 50%;
