@@ -93,6 +93,7 @@ header {
     justify-content: flex-end;
     padding: 40px 100px 0px 100px;
     flex-wrap: wrap;
+    gap: 40px;
 
 }
 
@@ -240,7 +241,7 @@ h2 {
     }
 
     #login-img {
-        width: 800px;
+        width: auto;
         margin: 0;
     }
 
