@@ -113,7 +113,7 @@ header {
 }
 
 #login-img {
-    width: 40vw;
+    max-width: 500px;
     margin-right: 5%;
 }
 
